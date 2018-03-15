@@ -1,8 +1,8 @@
 """
 Implementation of generating semantic adversarial examples (SAEs).
-Running this file will generate SAEs of CIFAR10 test data
-on a pretrained VGG16 model. The code outputs the attack
-success rate and stores examples in an .npy file.
+Running this file will generate adversarial color-shifted images of 
+CIFAR10 test data on a pretrained VGG16 model. The code outputs 
+attack success rate and stores adversarial examples in a .npy file.
 """
 
 from keras.models import load_model
@@ -52,7 +52,7 @@ def color_shift_attack(X, y, num_trials):
         X_adv_hsv = np.copy(X_hsv)
 
         d_h = np.random.uniform(0, 1, size=(X_adv_hsv.shape[0],1))
-        d_s = np.random.uniform(-1, 1, size=(X_adv_hsv.shape[0],1)) * i / num_trials
+        d_s = np.random.uniform(-1, 1, size=(X_adv_hsv.shape[0],1)) * float(i) / num_trials
 
         for j in range(X_adv_hsv.shape[0]):
             X_adv_hsv[j, :, :, 0] = (X_hsv[j, :, :, 0] + d_h[j]) % 1.0
