@@ -40,10 +40,10 @@ def color_shift_attack(X, y, num_trials):
 
     X_adv = []  # accumulator of adversarial examples
 
-    # Convert RGB to HSV
-    X_hsv = matplotlib.colors.rgb_to_hsv(X / 255.)
-
     X /= 255.
+    
+    # Convert RGB to HSV
+    X_hsv = matplotlib.colors.rgb_to_hsv(X)
 
     for i in range(num_trials):
 
