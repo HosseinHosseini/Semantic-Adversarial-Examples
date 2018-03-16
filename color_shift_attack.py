@@ -92,9 +92,10 @@ if __name__ == '__main__':
 
     num_trials = 1000
 
-    color_shifted_examples, adv_succ_num = color_shift_attack(X_test, y_test, num_trials)
-
-    np.save('color_shift_examples.npy', color_shifted_examples)
+    X_adv, adv_succ_num = color_shift_attack(X_test, y_test, num_trials)
+    
+    X_adv = np.concatenate(X_adv, axis=0)
+    np.save('color_shift_examples.npy', X_adv)
     
     # Median number of trials needed to generate adversarial examples
     median_num = np.argmin(np.abs(np.cumsum(adv_succ_num)/X_test.shape[0] - 0.5))
