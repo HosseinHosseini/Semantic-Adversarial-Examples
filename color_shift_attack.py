@@ -63,7 +63,6 @@ def color_shift_attack(X, y, num_trials):
         # extract out wrongly-classified images
 
         pred_label = np.argmax(model.predict(data_normalize(X * 255.)), axis=1)
-
         wrong_labels = pred_label != y.reshape(-1)
         
         X_adv.append(X[wrong_labels]) # store wrongly-classified images
