@@ -33,8 +33,7 @@ def color_shift_attack(X, y, num_trials):
     adv_succ_num = np.zeros((num_trials + 1, 1))
     adv_succ_num[0] = np.sum(wrong_labels)
 
-    print('Trial ' + str(0) +
-          ', Attack success rate: ' + str(np.sum(adv_succ_num) / N))
+    print('Trial 0' + ', Attack success rate: ' + str(np.sum(adv_succ_num) / N))
 
     ####################################################################
 
