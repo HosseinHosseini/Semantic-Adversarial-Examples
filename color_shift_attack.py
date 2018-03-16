@@ -66,7 +66,7 @@ def color_shift_attack(X, y, num_trials):
 
         wrong_labels = pred_label != y.reshape(-1)
         
-        X_adv.append(X_hsv[wrong_labels]) # store wrongly-classified images
+        X_adv.append(X[wrong_labels]) # store wrongly-classified images
 
         X_hsv = X_hsv[wrong_labels == 0]
         y = y[wrong_labels == 0]
