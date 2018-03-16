@@ -9,5 +9,5 @@ The code implements the attack on VGG16 network and CIFAR10 dataset. The pretrai
 Paper can be found here:  
 **Semantic Adversarial Examples**  
 *Hossein Hosseini and Radha Poovendran*  
-<sub>Network Security Lab (NSL), Department of Electrical Engineering, University of Washington  
+Network Security Lab (NSL), Department of Electrical Engineering, University of Washington  
 Link
