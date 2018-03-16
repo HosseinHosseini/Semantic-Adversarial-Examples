@@ -10,5 +10,5 @@ Paper can be found here:
 **Semantic Adversarial Examples**  
 *Hossein Hosseini and Radha Poovendran*  
 <sub>Network Security Lab (NSL)<sub>  
-<sub>Department of Electrical Engineering, University of Washington<sub>  
+Department of Electrical Engineering, University of Washington  
 Link
