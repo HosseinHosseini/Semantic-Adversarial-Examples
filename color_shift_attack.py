@@ -103,6 +103,6 @@ if __name__ == '__main__':
           ', Median number of trials needed: ' + str(median_num))
 
     plt.plot(np.cumsum(adv_succ_num)/X_test.shape[0])
-    plt.xlabel('Number of trials')
-    plt.ylabel('Attack success rate')
+    plt.xlabel('Number of Trials')
+    plt.ylabel('Attack Success Rate')
     plt.show()
