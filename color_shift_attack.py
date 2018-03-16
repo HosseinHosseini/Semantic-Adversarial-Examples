@@ -65,9 +65,8 @@ def color_shift_attack(X, y, num_trials):
         pred_label = np.argmax(model.predict(data_normalize(X * 255.)), axis=1)
 
         wrong_labels = pred_label != y.reshape(-1)
-
-        # store wrongly-classified images
-        X_adv.append(X_hsv[wrong_labels])
+        
+        X_adv.append(X_hsv[wrong_labels]) # store wrongly-classified images
 
         X_hsv = X_hsv[wrong_labels == 0]
         y = y[wrong_labels == 0]
