@@ -10,4 +10,4 @@ Paper can be found here:
 **Semantic Adversarial Examples**  
 Hossein Hosseini and Radha Poovendran  
 Network Security Lab (NSL), Department of Electrical Engineering, University of Washington  
-Link
+https://arxiv.org/abs/1804.00499
