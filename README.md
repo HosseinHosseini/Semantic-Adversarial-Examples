@@ -7,7 +7,4 @@ In our paper, we introduced a new class of adversarial examples, namely *Semanti
 The code implements the attack on VGG16 network and CIFAR10 dataset. The pretrained weights of VGG16 network can be downloaded from [here](https://github.com/geifmany/cifar-vgg). The maximum number of trials is set to 1000. The results show that, for about 94.5% of CIFAR10 test images, it is possible to change the colors such that the modified image is misclassified by the model. 
 
 Paper can be found here:  
-**Semantic Adversarial Examples**  
-Hossein Hosseini and Radha Poovendran  
-Network Security Lab (NSL), Department of Electrical Engineering, University of Washington  
 https://arxiv.org/abs/1804.00499
